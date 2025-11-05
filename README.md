@@ -14,22 +14,25 @@ This project applies **Variational Autoencoders (VAEs)** to fMRI data from an au
 ### 1. Manifold Discovery
 Successfully compressed ~390k voxels into a 15D latent space that captures task-relevant brain dynamics.
 
-![UMAP Visualization](figures/04_manifold_umap.jpg)
+<img width="984" height="782" alt="Screenshot 2025-11-05 at 2 19 52 PM" src="https://github.com/user-attachments/assets/7eae1cc4-921a-4ba2-ba20-1d9250ff4506" />
 
 ### 2. Distinct Brain States
 Identified 6-8 clusters representing different cognitive states during word processing:
 
-![Cluster Analysis](figures/06_summary_report.jpg)
+<img width="1109" height="785" alt="Screenshot 2025-11-05 at 2 20 37 PM" src="https://github.com/user-attachments/assets/59c614ab-6bd9-44ed-8086-b78097a4a370" />
+
 
 ### 3. Behavioral Prediction
 Neural manifold position predicts reaction time with high accuracy (R² = 0.85 with Random Forest).
 
-![RT Prediction](figures/05_rt_prediction.jpg)
+<img width="1476" height="520" alt="Screenshot 2025-11-05 at 2 20 55 PM" src="https://github.com/user-attachments/assets/982b7df5-9623-4fd4-adc8-25cd7abbb52d" />
+
 
 ### 4. Training Stability
 VAE converged smoothly with balanced reconstruction and regularization.
 
-![Training](figures/01_training_convergence.jpg)
+<img width="1479" height="501" alt="Screenshot 2025-11-05 at 2 21 16 PM" src="https://github.com/user-attachments/assets/51d542d4-0256-48fd-a186-efbdce9e59b7" />
+
 
 ---
 
@@ -50,7 +53,7 @@ VAE converged smoothly with balanced reconstruction and regularization.
 
 ---
 
-## 📈 Findings
+## Findings
 
 ### What I Discovered
 **Neural manifolds organize by task states** (attention, arousal, difficulty)  
