@@ -7,20 +7,9 @@
 
 ---
 
-## 🧠 Project Overview
+This project applies **Variational Autoencoders (VAEs)** to fMRI data from an auditory lexical decision task in an attempt to discover low-dimensional neural manifolds that organize lexical representations.
 
-This project applies **Variational Autoencoders (VAEs)** to fMRI data from an auditory lexical decision task to discover low-dimensional neural manifolds that organize lexical representations.
-
-### Key Features
-- 🔬 **Single-trial fMRI analysis** (684 trials, 342 words)
-- 🧩 **15-dimensional neural manifold** learned via VAE
-- 📊 **Rich semantic annotations** (11 psycholinguistic features per word)
-- 🎯 **Behavioral decoding** (RT prediction R² = 0.85)
-- 🗺️ **Multiple clustering patterns** revealed via UMAP
-
----
-
-## 📊 Key Results
+## Results
 
 ### 1. Manifold Discovery
 Successfully compressed ~390k voxels into a 15D latent space that captures task-relevant brain dynamics.
@@ -29,9 +18,6 @@ Successfully compressed ~390k voxels into a 15D latent space that captures task-
 
 ### 2. Distinct Brain States
 Identified 6-8 clusters representing different cognitive states during word processing:
-- **Emotional engagement** (high valence/arousal words)
-- **Abstract vs. concrete processing** (imageability-driven)
-- **Automatic vs. controlled processing** (RT-based separation)
 
 ![Cluster Analysis](figures/06_summary_report.jpg)
 
@@ -47,7 +33,7 @@ VAE converged smoothly with balanced reconstruction and regularization.
 
 ---
 
-## 🔬 Methods
+## Methods
 
 **Data**: Auditory lexical decision fMRI (3T, TR=2s, 684 trials)
 
@@ -66,20 +52,15 @@ VAE converged smoothly with balanced reconstruction and regularization.
 
 ## 📈 Findings
 
-### What We Discovered
-✅ **Neural manifolds organize by task states** (attention, arousal, difficulty)  
-✅ **Behavioral variability is decodable** from neural state  
-✅ **Distinct clustering patterns** emerge without supervision  
-✅ **Trial-order effects** indicate attentional drift (r=0.12, p<0.01)
+### What I Discovered
+**Neural manifolds organize by task states** (attention, arousal, difficulty)  
+**Behavioral variability is decodable** from neural state  
+**Distinct clustering patterns** emerge without supervision  
+**Trial-order effects** indicate attentional drift (r=0.12, p<0.01)
 
-### What We Tested
-❌ **Semantic feature encoding**: Manifold did not capture word-level semantic properties (all R² < 0)  
-❌ **Lexical category separation**: Words vs. pseudowords heavily overlapped  
+### What I Tested
+**Semantic feature encoding**: Manifold did not capture word-level semantic properties (all R² < 0)  
+**Lexical category separation**: Words vs. pseudowords heavily overlapped  
 
 **Interpretation**: Lexical decision tasks may access phonological/orthographic representations rather than deep semantic meaning.
 
----
-
-## 🚀 Getting Started
-
-### Installation
