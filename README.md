@@ -41,15 +41,15 @@ VAE converged smoothly with balanced reconstruction and regularization.
 **Data**: Auditory lexical decision fMRI (3T, TR=2s, 684 trials)
 
 **Model**: Conditional Variational Autoencoder
-- Encoder: fMRI (390k voxels) → 15D latent space
-- Decoder: 15D latent → reconstructed fMRI
+- Encoder: fMRI (390k voxels) → 20D latent space
+- Decoder: 20D latent → reconstructed fMRI
 - Loss: MSE reconstruction + KL divergence
 
-**Analysis**:
+**BaseLine Analysis**:
 - Dimensionality reduction (PCA, UMAP)
 - Cluster analysis (K-means)
 - Behavioral prediction (Random Forest, Ridge Regression)
-- Semantic feature encoding (cross-validated R²)
+- Semantic feature encodin ~ Representational Similiarity Analysis (RSA)
 
 ---
 
